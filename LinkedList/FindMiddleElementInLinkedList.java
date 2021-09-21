@@ -24,6 +24,7 @@ class FindMiddleElementInLinkedList{
 		return slow.data;
 	}
 
+	// innner class for LinkedList daata structures
 	public static  class  Node{
 		public Node next;
 		public int data;
