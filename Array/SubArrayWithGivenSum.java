@@ -14,12 +14,16 @@ class SubArrayWithGivenSum{
 
 		int left=0,right=0,sum=0,flag=0;
 		while(left < n && right < n){
+			
+			//if sum is lesthan num then additon the right value 
 			if(sum<num){
 				sum+=a[right++];
 			}
+			// is sum is greater num then substract the left value
 			else if(sum>num){
 				sum-=a[left++];
 			}
+			// if sum is equal to num then the operation compleated
 			else if(sum==num){
 				//System.out.println("starting position "+left+" end possitopn"+right);
 				flag=1;
